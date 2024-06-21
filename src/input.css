@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply flex items-center text-[#482E1D] font-semibold text-xl hover:text-white;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply flex underline decoration-[#9B3C27] decoration-4 underline-offset-8 hover:text-[#D5B16C];
+  }
+  .interestIn {
+    @apply bg-[#9B3C27] focus:outline-none focus:ring-2 focus:ring-[#9B3C28] focus:ring-offset-2 rounded-full text-center pt-1 pb-1 pr-12 pl-12;
+  }
+  .activityBackground {
+    @apply bg-[#482E1D] w-full h-80 shadow-2xl hover:-translate-y-2 hover:bg-opacity-85 transition-all duration-500;
+  }
+}
